@@ -20,6 +20,7 @@
 @include icon-button.core-styles;
 
 body {
+  overflow: hidden;
   @include theme.prop(
     background-color,
     (
