@@ -1,7 +1,7 @@
 {
-  "name": "webpack-starter",
+  "name": "material-design-webpack-boilerplate",
   "version": "1.0.0",
-  "description": "A light foundation for your next frontend project based on webpack.",
+  "description": "A light foundation for your next frontend project based on Material Design and Webpack",
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --config webpack/webpack.config.prod.js  --colors",
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wbkd/webpack-starter.git"
+    "url": "git+https://github.com/pistell/material-design-webpack-boilerplate.git"
   },
   "keywords": [
     "webpack",
@@ -20,7 +20,11 @@
     "javascript",
     "boilerplate"
   ],
-  "author": "webkid.io",
+  "author": {
+    "name": "James Pistell",
+    "email": "jamespistell@gmail.com",
+    "url": "http://jamespistell.com/"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/wbkd/webpack-starter/issues"
@@ -67,6 +71,10 @@
     "glob": "^7.1.6",
     "normalize.css": "^8.0.1"
   },
-  "homepage": "https://github.com/wbkd/webpack-starter#readme",
-  "main": "index.js"
+  "homepage": "https://github.com/pistell/material-design-webpack-boilerplate#readme",
+  "main": "./src/scripts/index.js",
+  "engines": {
+    "node": ">=13.6.0",
+    "npm": ">=6.13.4"
+  }
 }
