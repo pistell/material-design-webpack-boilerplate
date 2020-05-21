@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+    <title>Website Name | Tagline</title>
+  </head>
+  <body class="mdc-typography">
+    <!-- Top App Bar -->
+    <header class="mdc-top-app-bar header mdc-elevation--z10">
+      <div class="mdc-top-app-bar__row header-row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
+          <span class="mdc-top-app-bar__title">Page title</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
+          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
+        </section>
+      </div>
+    </header>
+
+    <!-- Main Content of Page | 3 columns -->
+    <main class="mdc-layout-grid mdc-elevation--z4">
+      <div class="mdc-layout-grid__inner">
+        <div class="mdc-layout-grid__cell">
+          <p class="mdc-typography--body1">Typography: Body 1</p>
+          <p class="mdc-typography--body1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae at sapiente quod pariatur doloremque, aperiam vitae, laborum reiciendis doloribus earum ipsum a cupiditate aut corporis distinctio amet quas neque. Ut!</p>
+          <button class="mdc-button mdc-button--raised">
+            <div class="mdc-elevation-overlay"></div>
+            <div class="mdc-button__ripple"></div>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">bookmark</i>
+            <span class="mdc-button__label">Contained Button plus Icon</span>
+          </button>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <p class="mdc-typography--body2">Typography: Body 2</p>
+          <p class="mdc-typography--body2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae at sapiente quod pariatur doloremque, aperiam vitae, laborum reiciendis doloribus earum ipsum a cupiditate aut corporis distinctio amet quas neque. Ut!</p>
+          <button class="mdc-button mdc-button--outlined">
+            <div class="mdc-button__ripple"></div>
+            <i class="material-icons mdc-button__icon" aria-hidden="true">bookmark</i>
+            <span class="mdc-button__label">Outlined Button plus Icon</span>
+          </button>
+        </div>
+        <div class="mdc-layout-grid__cell">
+          <p>Typography: Unset</p>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae at sapiente quod pariatur doloremque, aperiam vitae, laborum reiciendis doloribus earum ipsum a cupiditate aut corporis distinctio amet quas neque. Ut!</p>
+          <button class="mdc-button mdc-button--raised">
+            <span class="mdc-button__label">Contained Button</span>
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <!-- Sticky Footer -->
+    <footer class="app-bar-bottom">
+      <div class="app-bar-bottom__row">
+        <section class="app-bar-bottom__section app-bar-bottom__section--align-start">
+          <div class="menu-button-container" style="position: relative;">
+            <div class="mdc-touch-target-wrapper">
+              <h3>Bottom App Bar - Start</h3>
+            </div>
+          </div>
+        </section>
+        <section class="app-bar-bottom__section">
+          <h3>Bottom App Bar - Middle</h3>
+        </section>
+        <section class="app-bar-bottom__section app-bar-bottom__section--align-end">
+          <h3>Bottom App Bar - End</h3>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>

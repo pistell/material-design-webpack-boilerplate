@@ -1,0 +1,36 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len": [
+      2,
+      {
+        "code": 250,
+        "comments": 250,
+        "ignoreTemplateLiterals": true,
+        "ignoreStrings": true
+      }
+    ],
+    "no-console": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": ["error", { "allowTernary": true }],
+    "new-cap": "off",
+    "func-names": "off",
+    // disable this because of Leaflet.DumbMGRS
+    "no-mixed-operators": "off"
+    // "object-curly-newline": ["error", { "multiline": true, "minProperties": 5 }]
+  },
+  "globals": {
+    "document": true,
+    "window": true,
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  }
+}
