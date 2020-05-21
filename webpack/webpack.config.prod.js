@@ -50,6 +50,9 @@ module.exports = merge(common, {
               sassOptions: {
                 includePaths: ['./node_modules'],
               },
+              // https://github.com/material-components/material-components-web/issues/5782
+              // Workaround for the sass-loader issue in Webpack.
+              webpackImporter: false,
             },
           },
         ],
