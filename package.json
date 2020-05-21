@@ -59,6 +59,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.8.3",
+    "@material/animation": "^6.0.0",
     "@material/button": "^6.0.0",
     "@material/elevation": "^6.0.0",
     "@material/icon-button": "^6.0.0",

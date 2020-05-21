@@ -10,6 +10,7 @@
 @use "@material/top-app-bar/mdc-top-app-bar";
 @use "@material/typography/mdc-typography";
 @use "@material/elevation/mdc-elevation";
+@use "@material/animation";
 
 // @import and @include go after @use
 @import './icons.css';
@@ -49,6 +50,35 @@ main {
   flex-direction: column;
   height: auto;
   display: flex;
+}
+
+// Custom MDC styles - Adjust scale and opacity when a logo is hovered
+@keyframes fade-in {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.logoCell {
+  transition: all 0.2s ease-in-out;
+  opacity: 0.5;
+  will-change: opacity;
+  animation: animation.enter(/* $name: */ fade-in, /* $duration: */ 450ms);
+
+  &--animating {
+    transition: animation.enter(/* $name: */ opacity, /* $duration: */ 175ms);
+    opacity: 1;
+  }
+  &:hover {
+    opacity: 1;
+    transform: scale(1.1);
+  }
 }
 
 // Custom element - Fixed bottom app bar (not a part of Material Design)
