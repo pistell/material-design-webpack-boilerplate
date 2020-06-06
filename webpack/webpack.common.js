@@ -21,6 +21,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin([
       { from: Path.resolve(__dirname, '../public'), to: 'public' },
+      { from: Path.resolve(__dirname, '../src'), to: 'src' },
     ]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html'),
