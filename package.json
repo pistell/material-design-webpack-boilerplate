@@ -67,7 +67,7 @@
     "@material/theme": "^6.0.0",
     "@material/top-app-bar": "^6.0.0",
     "@material/typography": "^6.0.0",
-    "core-js": "^3.6.4",
+    "core-js": "^3.8.0",
     "glob": "^7.1.6",
     "normalize.css": "^8.0.1"
   },
